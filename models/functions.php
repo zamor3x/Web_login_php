@@ -37,7 +37,6 @@ function access_user()
     /*Lines 16-24 use a series of "if" statements to determine which page should be loaded after login, based on the value of the "role" field. 
     If the value is 1, the "admin.php" page is loaded; if it is 2, the "accounting.php" page is loaded; if it is 3, the "marketing.php" page is loaded.*/
     if ($rows['rol'] == 1) {
-
         header('Location: ../views/admin.php');
     } else if ($rows['rol'] == 2) {
         header('Location: ../views/accounting.php');
