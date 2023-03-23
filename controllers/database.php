@@ -11,10 +11,7 @@ The variables defined above are passed to it as arguments. The result of this fu
 $connect = mysqli_connect($host, $user, $password, $database);
 
 //It checks if the connection was successful using an if conditional. If the connection was not made, an error message is printed using the mysqli_connect_error() function.
-if(!$connect){
-echo "The connection to the database was not made, the error was:".
-mysqli_connect_error() ;
-
+if (!$connect) {
+    echo "The connection to the database was not made, the error was:" .
+        mysqli_connect_error();
 }
-
-?>
